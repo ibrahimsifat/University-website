@@ -112,62 +112,57 @@ nav ul li a {
 }
 
 
-/* about style start here */
+/* -----------------------------
+our courses offer style start here 
+------------------------------*/
 
-.slider {
-    width: 250px;
-    border: 2px solid firebrick;
-    border-radius: 20px;
+.courses {
     margin: 40px 0;
-    position: relative;
-    overflow: hidden;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-.slider img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-.slider .slider-text {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    background-color: rgba(103, 48, 18, 0.411);
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 15px;
+.courses .sec-hadding {
     text-align: center;
+    margin: 80px 0;
 }
 
-.slider .slider-text h1 {
-    color: white;
-    margin: 20px 0;
+.courses .sec-hadding h1 {
+    margin-bottom: 8px;
+    font-size: 40px;
 }
 
-.slider .slider-text {
-    color: white;
+.courses .sec-hadding p {
+    color: #9b9b9b;
 }
 
-.slider:hover .slider-text {
-    bottom: 0%;
-    transition: 1s ease-out;
-}
-
-#slider-container {
+.courses-wapper {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.slider:hover .image img {
-    transform: scale(1.5);
-    transition: transform 1s ease-in-out
+.courses-wapper .card {
+    background-color: #f6e9e9;
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px 8px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease;
+    margin-bottom: 80px;
+}
+
+.courses-wapper .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 25px -20px;
+}
+
+.courses-wapper .card h3 {
+    padding: 10px 0;
+}
+
+.courses-wapper .card p {
+    font-size: 14;
+    color: #8b8282;
+    font-weight: lighter;
 }
 
 
@@ -212,6 +207,12 @@ nav ul li a {
         display: block;
         color: #fff;
         font-size: 22px;
+    }
+}
+
+@media (max-width:700px) {
+    .courses-wapper {
+        flex-direction: column;
     }
 }
 
