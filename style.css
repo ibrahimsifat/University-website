@@ -171,6 +171,10 @@ our courses offer style start here
 our global campus styling start here
  ----------------------*/
 
+.campus .sec-hadding {
+    margin-bottom: 30px;
+}
+
 .campus-wapper {
     display: flex;
     max-width: 85%;
@@ -183,6 +187,7 @@ our global campus styling start here
     flex-basis: 30%;
     margin-bottom: 80px;
     position: relative;
+    cursor: pointer;
     overflow: hidden;
 }
 
@@ -259,9 +264,6 @@ our global campus styling start here
 }
 
 @media (max-width:700px) {
-    * {
-        overflow: hidden;
-    }
     .homecontant {
         text-align: center;
     }
@@ -275,6 +277,12 @@ our global campus styling start here
         margin-top: 20px;
         font-size: 15px;
         font-size: 13px;
+    }
+    .sec-hadding h1 {
+        font-size: 25px;
+    }
+    .campus .sec-hadding {
+        margin-bottom: 50px;
     }
     .courses-wapper {
         flex-direction: column;
